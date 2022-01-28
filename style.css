@@ -1,26 +1,93 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-
-* {
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+*{
     box-sizing: border-box ;
     margin: 0;
     padding: 0;
     background-color: white;
 
 }
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
    /* background-color: antiquewhite; */
+    
 }
 
-li{
+.nav_links {
+    display: flex;
+    font-family: "Quicksand", sans-serif;
+    list-style: none;
+    font-size: 30px;
+    font-weight: bold;
+    justify-content: space-evenly;
+}
+
+.logo {
+    margin-right: auto;
+    cursor: pointer;
+    width: 300px;
+}
+
+.nav_links li a{ 
+    text-decoration: none;
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 20px;
+    margin-right: 20px;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+.nav_links li {
+    transition: all 0.3s ease 0s;
+}
+.nav_links li :hover{
+    color : #a0278c;
+}
+/* .more1 {
+
+    background-color: #9375ff;
+} */
+
+#more {
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+    /* margin: 80px 30px 80px 30px; */
+    
+}
+#more img {
+    max-width: 50%;
+    order: 2;
+    margin-left: auto;
+}
+h1 {
+    color: antiquewhite;
+    font-size: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    nav {
+        flex-direction:column;
+    }
+    #more {
+        flex-direction: column-reverse;
+    }
+    
+}
+
+/* li{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 25px;
-    color: #b966ae;
     text-decoration: none;
 }
+
+*/
 
 /* header {
     background-color: white; 
@@ -31,32 +98,11 @@ li{
 }  
 */
 
-.logo {
-    margin-right: auto;
-    cursor: pointer;
-    width: 300px;
-}
-
-.nav_links ul{
+/*.nav_links ul{
 
     text-decoration: none;
     float: right;
     margin-right: 20px;
     list-style: none;
 }
-
-nav ul li{ 
-    text-decoration: none;
-    display: inline-block;
-    line-height: 100px;
-    margin: 0 20px;
-    text-decoration: none;
-
-}
-
-.nav_links li {
-    transition: all 0.3s ease 0s;
-}
-.nav_links li :hover{
-    color : #da8bcd;
-}
+*/
